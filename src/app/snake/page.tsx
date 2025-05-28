@@ -8,7 +8,7 @@ export default function Snake() {
           Snake Game
         </h1>
         <p className="text-[var(--foreground)] opacity-80 max-w-2xl mx-auto">
-          Use your arrow keys to control the snake. Collect the food to grow longer, but don't hit the walls or yourself!
+          Use your arrow keys to control the snake. Collect the food to grow longer, but don&apos;t hit the walls or yourself!
         </p>
       </div>
       

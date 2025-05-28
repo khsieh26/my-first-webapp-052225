@@ -1,7 +1,5 @@
 import Link from "next/link"
 import SnakeGame from "./components/Snake-Game"
-import Counter from './components/Counter';
-import TodoList from './components/ToDoList';
 
 export default function HomePage() {
   return (
@@ -15,7 +13,7 @@ export default function HomePage() {
                 Kaity&apos;s First Web App
               </h1>
               <p className="mx-auto max-w-[700px] text-[var(--foreground)] opacity-80 md:text-xl">
-                This is my experiment to figure out how to do basic coding shit. Okay, it's mostly Claude doing the work.
+                This is my experiment to figure out how to do basic coding shit. Okay, it&apos;s mostly Claude doing the work.
               </p>
             </div>
             <div className="space-x-4">

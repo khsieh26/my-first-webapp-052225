@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 // Game constants
 const GRID_SIZE = 20;
@@ -20,7 +20,7 @@ export default function SnakeGame() {
   const gameLoopRef = useRef<NodeJS.Timeout | null>(null);
   
   // Function to generate random food position
-  const generateFood = () => {
+  const generateFood = useCallback(() => {
     const x = Math.floor(Math.random() * GRID_SIZE);
     const y = Math.floor(Math.random() * GRID_SIZE);
     
@@ -31,7 +31,7 @@ export default function SnakeGame() {
     }
     
     return { x, y };
-  };
+  }, [snake]);
   
   // Handle keyboard input
   useEffect(() => {
@@ -151,7 +151,7 @@ export default function SnakeGame() {
         clearInterval(gameLoopRef.current);
       }
     };
-  }, [direction, food, gameOver, isPaused, isStarted]);
+  }, [direction, food, gameOver, isPaused, isStarted, generateFood]);
   
   // Start game function
   const startGame = () => {
