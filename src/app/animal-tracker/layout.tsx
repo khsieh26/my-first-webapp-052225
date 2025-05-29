@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Kaity's Zoo",
-  description: 'Track all the wonderful animals in Kaity\'s Zoo',
+  title: "Kaitys Zoo",
+  description: 'Track all the wonderful animals in Kaitys Zoo',
 }
 
 export default function AnimalTrackerLayout({

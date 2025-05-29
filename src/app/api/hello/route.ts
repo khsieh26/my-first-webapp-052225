@@ -2,19 +2,19 @@ import { NextResponse } from 'next/server';
 import supabase from '@/lib/supabase';
 
 export async function GET() {
-  const { data, error } = await supabase
+  const result = await supabase
     .from('items')
     .select('*')
     .order('created_at', { ascending: false });
     
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+  if (result.error) {
+    return NextResponse.json({ error: result.error.message }, { status: 500 });
   }
   
   return NextResponse.json({
     message: 'Data retrieved from real database!',
     time: new Date().toISOString(),
-    items: data || [],
+    items: result.data || [],
   });
 }
 
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
       );
     }
     
-    const { data, error } = await supabase
+    const result = await supabase
       .from('items')
       .insert([{ 
         name: body.name,
@@ -37,16 +37,16 @@ export async function POST(request: Request) {
       }])
       .select();
       
-    if (error) {
+    if (result.error) {
       return NextResponse.json(
-        { error: error.message },
+        { error: result.error.message },
         { status: 500 }
       );
     }
     
     return NextResponse.json({ 
       message: 'Item created!',
-      item: data[0]
+      item: result.data[0]
     });
   } catch (err) {
     console.error('Error processing request:', err);
