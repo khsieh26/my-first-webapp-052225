@@ -39,16 +39,10 @@ export default function Navigation() {
               Home
             </Link>
             <Link 
-              href="/counter" 
-              className={`hover:text-[var(--primary)] transition-colors ${pathname === '/counter' ? 'text-[var(--primary)]' : ''}`}
+              href="/animal-tracker" 
+              className={`hover:text-[var(--primary)] transition-colors ${pathname === '/animal-tracker' ? 'text-[var(--primary)]' : ''}`}
             >
-              Counter
-            </Link>
-            <Link 
-              href="/todos" 
-              className={`hover:text-[var(--primary)] transition-colors ${pathname === '/todos' ? 'text-[var(--primary)]' : ''}`}
-            >
-              Todos
+              Kaity&apos;s Zoo 🦁
             </Link>
             <Link 
               href="/snake" 
@@ -57,10 +51,10 @@ export default function Navigation() {
               Snake Game
             </Link>
             <Link 
-              href="/api-demo" 
-              className={`hover:text-[var(--primary)] transition-colors ${pathname === '/api-demo' ? 'text-[var(--primary)]' : ''}`}
+              href="/counter" 
+              className={`hover:text-[var(--primary)] transition-colors ${pathname === '/counter' ? 'text-[var(--primary)]' : ''}`}
             >
-              API Demo
+              Counter
             </Link>
           </nav>
         </div>

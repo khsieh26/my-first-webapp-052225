@@ -22,9 +22,9 @@ export default function HomePage() {
                   Play Snake Game
                 </button>
               </Link>
-              <Link href="/todos">
+              <Link href="/animal-tracker">
                 <button className="px-4 py-2 rounded-md border border-pink-200 dark:border-pink-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-medium hover:bg-gray-50 dark:hover:bg-gray-800">
-                  Try ToDo App
+                  Visit Zoo 🦁
                 </button>
               </Link>
             </div>
@@ -65,7 +65,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="flex flex-col items-center space-y-2 rounded-lg border border-pink-200 dark:border-pink-800 p-6 shadow-sm transition-all hover:shadow-md">
               <div className="rounded-full bg-purple-100 dark:bg-purple-900/20 p-3">
                 {/* Rocket icon */}
@@ -99,38 +99,8 @@ export default function HomePage() {
             </div>
 
             <div className="flex flex-col items-center space-y-2 rounded-lg border border-pink-200 dark:border-pink-800 p-6 shadow-sm transition-all hover:shadow-md">
-              <div className="rounded-full bg-pink-100 dark:bg-pink-900/20 p-3">
-                {/* Checkbox icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6 text-pink-600 dark:text-pink-400"
-                >
-                  <rect width="18" height="18" x="3" y="3" rx="2" />
-                  <path d="m9 13 2 2 4-4" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold">ToDo List</h3>
-              <p className="text-center text-[var(--foreground)] opacity-80">
-                Keep track of your tasks with this interactive todo application
-              </p>
-              <Link href="/todos">
-                <button className="px-3 py-1.5 text-pink-600 dark:text-pink-400 hover:bg-pink-50 dark:hover:bg-pink-900/20 rounded-md">
-                  Try it out
-                </button>
-              </Link>
-            </div>
-
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-pink-200 dark:border-pink-800 p-6 shadow-sm transition-all hover:shadow-md">
               <div className="rounded-full bg-orange-100 dark:bg-orange-900/20 p-3">
-                {/* Star icon */}
+                {/* Paw icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -143,14 +113,19 @@ export default function HomePage() {
                   strokeLinejoin="round"
                   className="h-6 w-6 text-orange-600 dark:text-orange-400"
                 >
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  <circle cx="11" cy="4" r="2" />
+                  <circle cx="18" cy="8" r="2" />
+                  <circle cx="20" cy="16" r="2" />
+                  <path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">API Demo</h3>
-              <p className="text-center text-[var(--foreground)] opacity-80">See how to fetch and display data from external APIs</p>
-              <Link href="/api-demo">
+              <h3 className="text-xl font-bold">Kaity&apos;s Zoo 🦁</h3>
+              <p className="text-center text-[var(--foreground)] opacity-80">
+                Track and manage all the wonderful animals in our magical zoo
+              </p>
+              <Link href="/animal-tracker">
                 <button className="px-3 py-1.5 text-orange-600 dark:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-md">
-                  Try it out
+                  Visit Zoo
                 </button>
               </Link>
             </div>
