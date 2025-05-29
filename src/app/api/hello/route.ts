@@ -48,7 +48,8 @@ export async function POST(request: Request) {
       message: 'Item created!',
       item: data[0]
     });
-  } catch (error) {
+  } catch (err) {
+    console.error('Error processing request:', err);
     return NextResponse.json(
       { error: 'Invalid request body' },
       { status: 400 }

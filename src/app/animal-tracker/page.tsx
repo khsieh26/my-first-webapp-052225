@@ -69,7 +69,7 @@ export default function AnimalTrackerPage() {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen py-2">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2 text-white">Animal Tracker 🦁</h1>
-          <p className="text-xl text-gray-300">Animals in Kaity's Zoo</p>
+          <p className="text-xl text-gray-300">When Kaity gets new animals, make sure to add them here!</p>
         </div>
         
         <div className="w-full max-w-md p-6 border border-gray-700 rounded-lg mb-8 bg-gray-800/95 shadow-xl backdrop-blur-sm">
